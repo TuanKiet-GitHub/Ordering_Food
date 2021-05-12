@@ -48,8 +48,6 @@ public class HomeFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-
-
     private String mParam1;
     private String mParam2;
     public static Double sumCart = 0.0 ;
@@ -67,12 +65,9 @@ public class HomeFragment extends Fragment {
     categories_Adapter adapterCategories ;
     public static ArrayList<FoodMode> listCart = new ArrayList<>();
     private  View view ;
-
-
     public HomeFragment() {
         // Required empty public constructor
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
