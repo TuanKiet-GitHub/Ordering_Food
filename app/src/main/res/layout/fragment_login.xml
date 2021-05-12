@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragment.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:text="tuankiet11a3@gmail.com"
+                android:id="@+id/emailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="16dp"
+                android:textCursorDrawable="@color/silver"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/silver"
+                app:hintEnabled="false"
+                app:hintTextColor="@color/silver"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:text="123456789"
+                    android:id="@+id/passwordLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@color/silver"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/savePass"
+                    android:textColor="@color/silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvforgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/forgot"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/login"
+                android:textStyle="bold"
+                app:backgroundTint="@color/red" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/facebookLogin"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/googleLogin"
+                    android:src="@drawable/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

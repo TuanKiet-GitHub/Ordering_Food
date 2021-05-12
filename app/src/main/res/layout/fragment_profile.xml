@@ -1,0 +1,58 @@
+ <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/login"
+        android:id="@+id/fragmentProfile"
+        tools:context=".fragment.ProfileFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="75dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabLayout
+                    app:tabSelectedTextColor="@color/red"
+                    app:tabIndicatorColor="@color/red"
+                    android:backgroundTintMode="add"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    app:tabTextColor="@color/silver"
+                    android:layout_height="wrap_content"></com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginBottom="20dp"
+                    />
+                >
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!-- TODO: Update blank fragment layout -->
+
+    </FrameLayout>
+

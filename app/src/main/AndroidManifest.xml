@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ordering_food">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/panda"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/panda"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ordering_Food">
+        <activity android:name=".activity.FoodCartActivity"></activity>
+        <activity android:name=".activity.listCategoriesActivity" />
+        <activity android:name=".activity.AllCategoriesActivity" />
+        <activity android:name=".activity.AllTrendingActivity" />
+        <activity android:name=".activity.OrderPageActivity" />
+        <activity android:name=".start.Login" />
+        <activity android:name=".home.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".start.getLocation" />
+        <activity android:name=".start.introduce" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

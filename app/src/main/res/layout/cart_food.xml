@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    app:layout_constraintCircleRadius="@dimen/material_emphasis_high_type"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/custombackground"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/imgCartFood"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hamburger"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_marginTop="-70dp"
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/txtNameCartFood"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Hambuger"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtPriceCartFood"
+                    android:layout_marginLeft="15dp"
+                    android:text="25"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="$"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            </LinearLayout>
+        <LinearLayout
+
+            android:layout_gravity="end"
+            android:layout_marginTop="-70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:background="@color/white"
+                android:id="@+id/ImgRemoveCountCartFood"
+                android:src="@drawable/remove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/txtCountCartFood"
+                android:layout_marginLeft="10dp"
+                android:textSize="30sp"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:background="@color/white"
+                android:id="@+id/ImgAddCountCartFood"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

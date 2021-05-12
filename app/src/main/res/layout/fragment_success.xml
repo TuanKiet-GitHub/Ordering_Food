@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentSuccessPass"
+    android:background="@color/white"
+    tools:context=".fragment.SuccessFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:background="#F7F6FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/imgBackSuccess"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-35dp"
+            android:src="@drawable/font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:background="@color/silver"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="-40dp"
+            android:id="@+id/animation"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="success.json"
+            app:lottie_loop="true"
+            app:lottie_repeatCount="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/successPass"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

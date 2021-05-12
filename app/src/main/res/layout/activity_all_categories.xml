@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page"
+    tools:context=".activity.AllCategoriesActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/imgBackAllCategories"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="-25dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/blackbackground"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="All Categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAllCatogaries"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_categories"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

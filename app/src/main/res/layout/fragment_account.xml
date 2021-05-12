@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundprofile"
+    tools:context=".fragment.AccountFragment"
+    android:id="@+id/fragmentAccount">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nguyễn Tuấn Kiệt"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="19dp"
+                        android:text="@string/phone"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="0971136408"
+                        android:layout_marginLeft="23dp"
+                        android:id="@+id/txtPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/email" />
+                    <TextView
+                        android:text="tuankiet11a3@gmail.com"
+                        android:layout_marginLeft="27dp"
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/address"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:text="Khu chung cư 178 đường lý chính thắng quận ninh kiều TP Cần Thơ"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/people" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="ACCOUNT SETTINGS"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/linerPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:src="@drawable/key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop = "-25dp"
+                    android:text="@string/Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginBottom="-10dp"
+                    android:id="@+id/nextPass"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerInformation"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:src="@drawable/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop = "-30dp"
+                    android:text="@string/ResetInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginBottom="-10dp"
+                    android:id="@+id/nextEmail"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linerLanguage"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:src="@drawable/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop = "-30dp"
+                    android:text="@string/ResetLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginBottom="-10dp"
+                    android:id="@+id/nextPhone"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linerDeliveryAddress"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:src="@drawable/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop = "-30dp"
+                    android:text="@string/ResetAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginBottom="-10dp"
+                    android:id="@+id/nextAddress"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-30dp"
+                    android:src="@drawable/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnLogOut"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@color/red"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/LogOut" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>
