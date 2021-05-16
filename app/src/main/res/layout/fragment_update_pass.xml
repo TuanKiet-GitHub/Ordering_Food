@@ -65,7 +65,8 @@
                 android:layout_height="wrap_content"
                 >
                 <EditText
-                    android:text="123456789"
+                    android:inputType="textPassword"
+                    android:text=""
                     android:id="@+id/edCurrentPass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -92,7 +93,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
-                    android:text="123456789"
+                    android:inputType="textPassword"
+                    android:text=""
                     android:id="@+id/edNewPass"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="50dp"
@@ -119,13 +121,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
-                    android:text="123456789"
+                    android:text=""
                     android:id="@+id/edConfirmNewPass"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="50dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <ImageView
+                    android:inputType="textPassword"
                     android:id="@+id/imgConfirmNewPass"
                     android:visibility="invisible"
                     android:layout_marginLeft="290dp"
